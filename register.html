@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Account</title>
+    <!-- wow css -->
+    <link rel="stylesheet" href="css/wow.mini.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- mdbootstrap css -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container page-wrap">
+    <div class="row align-items-center w-100">
+
+        <div class="col-md-6 mb-4 mb-md-0">
+            <img src="media/necklace2.jpg" alt="Necklace" class="product-img">
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="fg-black">Create Account</h2>
+            <h4 class="fg-secondary mt-4 mb-4">Go ahead and sign up, let everyone<br>know how awesome you are!</h4>
+
+            <!-- validation message -->
+            <div id="result" role="alert"></div>
+
+            <form onsubmit="return validateValue()" action="success.html" method="get" novalidate>
+                <input id="user" type="text" placeholder="User Name" name="user"
+                       class="fg-black form-control mt-2 mb-4 bg-white">
+
+                <input id="email" type="text" placeholder="Email" name="email"
+                       class="fg-black form-control mb-4 bg-white">
+
+                <input id="pass" type="password" placeholder="Password"
+                       class="fg-black form-control mb-4 bg-white">
+
+                <input id="confirm" type="password" placeholder="Confirm Password"
+                       class="fg-black form-control mb-4 bg-white">
+
+                <input type="submit" value="Create New Account" class="btn btn-theme">
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!-- wow js -->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!-- font awesome js -->
+<script src="js/all.min.js"></script>
+<!-- bootstrap 5 js -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- mdbootstrap js -->
+<script src="js/mdb.umd.min.js"></script>
+<!-- main js -->
+<script src="js/main.js"></script>
+</body>
+</html>
